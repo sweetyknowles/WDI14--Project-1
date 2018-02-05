@@ -12,3 +12,4 @@ While the user is playing this game, there is a stick figure that will keep buil
 
 Link to the deployment ~~~~ http://mystifying-wing-e3ed27.bitballoon.com/
 Link to  Trello ~~~~~~~~https://trello.com/b/Bopg1x4Z/wdi-project-1
+Link to Wireframe ~~~~~~https://imgur.com/a/ZffOH
