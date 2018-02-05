@@ -10,4 +10,4 @@ Th game page has two categories: Category 1 which has animals and catefory 2 whi
 While the user is playing this game, there is a stick figure that will keep building it -self as the user keep choosing the wrong letters. This is the Hangman. if the user wins the hangman will be happy or does not form at all; and if the user looses the hangman will be hanged.
 
 
-Link to the deployment ~~~~ mystifying-wing-e3ed27.bitballoon.com
+Link to the deployment ~~~~ https://www.bitballoon.com/sites/mystifying-wing-e3ed27
