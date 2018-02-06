@@ -18,11 +18,11 @@ var actors = ['brad','jennifer', 'darren'];
 var stopButton = document.querySelector('#stopButton');
 }
 
-function actors(){
-    rand = Math.floor(Math.random ()*actors.length);
-    word = actors[rand];
-    document.getElementById()
-}
+// function actors(){
+//     rand = Math.floor(Math.random ()*actors.length);
+//     word = actors[rand];
+//     document.getElementById()
+// }
 
 var word = "kangaroo";
 
@@ -47,7 +47,7 @@ for(let i = 0; i < newWord.length; i++ ){
     if(val === newWord[i]){
         console.log('values match this many times')
     } else {
-        console.log('try again')
+console.log('try again')
     }
 }
 }
