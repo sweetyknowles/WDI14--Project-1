@@ -74,39 +74,29 @@ div {
     display: block;
 }
 
-#buttons{
-    width:50%;
-    border-radius: 5px;
+#controlPanel{
+float:left;
+padding-top: 10px;
+}
+.button{
+    background-color: grey;
+    color:white;
+    border-radius:2px;
+    padding:1px;
+    text-align: center;
+    margin:px;
+    cursor:pointer;
+}
+#trafficlight{
+    height:20px;
+    width:150;
+    float: left;
+    background-color: blue;
+    border-radius: 30px;
+    margin: 20px 0;
     padding: 10px;
-    background-color: rgb(217, 233, 217);
-    margin: 10% auto;
-    text-align: center;
-    
-}
-#letters a{
-    color: rgb(19, 36, 190);
-    background-color: rgb(240, 230, 230);
-    border-radius: 5px;
-    padding: 5px;
-    cursor: pointer;
-}  
- #letters a:hover{
-    color: blue;
- }
-
-#letters a .de{
-    color: red;
-    text-decoration: underline; 
 }
 
-#singlepage {
-    font-size: 40px;
-    margin: 0px auto 40px auto;
-    text-align: center;
-
-}
-#category{
-    width: 100%;
-    height:50px;
-    margin: 0 auto;
+.style {
+    color: black;
 }
