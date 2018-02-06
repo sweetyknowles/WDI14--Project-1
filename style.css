@@ -111,3 +111,13 @@ padding-top: 10px;
     margin:px;
     cursor:pointer;
 }
+
+#back{
+    border-radius:2px;
+    padding: 1px;
+    text-align: center;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    margin:px;
+    cursor:pointer;
+}
