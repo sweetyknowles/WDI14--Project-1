@@ -1,4 +1,4 @@
-body {
+  body {
     
     margin: 0;
     min-height: 100vh;
@@ -45,8 +45,8 @@ main {
 }
 .List {
     font-style: italic;
-    font-weight: bold;
-    color: #26a69a;
+    font-weight: bold;    
+     color: #26a69a;
     }
 
 .bgimg { 
@@ -80,13 +80,13 @@ padding-top: 10px;
 }
 .button{
     background-color: grey;
-    color:white;
-    border-radius:2px;
-    padding:1px;
+    color:white; 
+     border-radius:2px;
+    padding: 1px;
     text-align: center;
     margin:px;
     cursor:pointer;
-}
+} 
 #trafficlight{
     height:20px;
     width:150;
@@ -98,5 +98,15 @@ padding-top: 10px;
 }
 
 .style {
-    color: black;
+    color: black; 
+}
+
+.catagory{
+    
+    border-radius:2px;
+    padding: 1px;
+    text-align: center;
+    padding-bottom: 10%;
+    margin:px;
+    cursor:pointer;
 }
