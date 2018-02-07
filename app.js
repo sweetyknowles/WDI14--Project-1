@@ -38,15 +38,16 @@ window.onload = function () {
         if (count === 0) {
             chance--
 
-            $('#chance').html("The guess was false");
+            $('#chance').html("Guess Again");
             //console.log(`you have ${chance} chances left`)
         }
         if (chance < 0) {
-            console.log("GameOver")
+            $('#chance').html("You Lost: Game OVER!");
+            //console.log("GameOver")
             $('.style').attr('disabled', true)
         }
 
-        console.log("The guess was " + correctMatch)
+        //console.log("The guess was " + correctMatch)
 
     }
 
