@@ -1,13 +1,12 @@
 window.onload = function () {
-    var animals = ['bear', 'horse', 'lion'];
-    
-    var chance = 6;
+
+
+
+    let animals = ['bear', 'horse', 'lion'];
+
+    let chance = 6;
     console.log(chance)
-    var chances = [];
-
-    var stopButton = document.querySelector('#stopButton');
-    var showLives = document.getElementById("mylives");
-
+    let chances = [];
     var word = "bear";
     // for (let i = 0; i < word.length; i++) {
     //     }
@@ -43,19 +42,19 @@ window.onload = function () {
                 count++
             }
         }
-        if(count === 0){
+        if (count === 0) {
             chance--
             console.log(`you have ${chance} chances left`)
         }
-        if (chance < 0){
+        if (chance < 0) {
             console.log("GameOver")
             $('.style').attr('disabled', true)
         }
-        
-        console.log("The guess was " +correctMatch)
 
-    } 
-    
+        console.log("The guess was " + correctMatch)
+
+    }
+
 
 
     $('.style').one('click', ((target) => {
@@ -63,32 +62,6 @@ window.onload = function () {
         compareValues(value)
 
     }))
-
-    //showing how many chances user has
-
-    chances = function () {
-        showchances.innerHTML = "you have" + "chances";
-        if (chances > 6) {
-            showchances.innerHTML = "YOU LOST";
-        }
-        for (let i = 0; i < guesses.length; i++) {
-            if (counter === guesses.length) {
-                showchances, innerHtml = "You Win";
-            }
-        }
-
-
-    }
-
-    function letnomatch() {
-        //if letter not in the list, return eveyrthing to zero 
-        if (misses === 6) {
-            alert("You Lost!")
-            loses++;
-            animals.length = 0;
-        }
-    }
-
 
 }
 
