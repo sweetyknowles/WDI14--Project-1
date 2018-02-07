@@ -1,18 +1,11 @@
 window.onload = function () {
 
-
-
     let animals = ['bear', 'horse', 'lion'];
 
     let chance = 6;
     console.log(chance)
     let chances = [];
     var word = "bear";
-    // for (let i = 0; i < word.length; i++) {
-    //     }
-    // $(`#animals`).text("The animal is " + word.split(' '));
-    //     console.log(word);
-    //creates letter buttons 
 
     let alphabet = "abcdefghijklmnopqrstuvwxyz"
     // function for the chosen word  from the animal that is to be guessed by the user. 
@@ -21,7 +14,7 @@ window.onload = function () {
         for (i = 0; i < letters.length; i++) {
             newArray.push(letters[i])
             let toButtonForm = letters[i]
-            let pushClassOut = $('main').append(`<button id=${letters[i]} class='style'>${letters[i]}</button>`)
+            let pushClassOut = $('#alphabet').append(`<button id=${letters[i]} class='style'>${letters[i]}</button>`)
             console.log(letters[i])
         }
     }
@@ -37,14 +30,16 @@ window.onload = function () {
             if (val === newWord[i]) {
                 console.log('values match this many times')
                 $(`#span${val}`).css('color', 'white')
-                console.log('try again')
+                //console.log('try again')
                 correctMatch = true;
                 count++
             }
         }
         if (count === 0) {
             chance--
-            console.log(`you have ${chance} chances left`)
+
+            $('#chance').html("The guess was false");
+            //console.log(`you have ${chance} chances left`)
         }
         if (chance < 0) {
             console.log("GameOver")
