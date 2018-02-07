@@ -4,7 +4,6 @@ window.onload = function () {
 
     let chance = 6;
     console.log(chance)
-    let chances = [];
     var word = "bear";
 
     let alphabet = "abcdefghijklmnopqrstuvwxyz"
@@ -28,6 +27,7 @@ window.onload = function () {
         let newWord = word.split('')
         for (let i = 0; i < newWord.length; i++) {
             if (val === newWord[i]) {
+                $('#chance').html("You Lost: Game OVER!");
                 console.log('values match this many times')
                 $(`#span${val}`).css('color', 'white')
                 //console.log('try again')
@@ -46,11 +46,8 @@ window.onload = function () {
             //console.log("GameOver")
             $('.style').attr('disabled', true)
         }
-
-        //console.log("The guess was " + correctMatch)
-
-    }
-
+         console.log("The guess was " + correctMatch)
+  }
 
 
     $('.style').one('click', ((target) => {
@@ -59,7 +56,10 @@ window.onload = function () {
 
     }))
 
-}
+    
+        
+    }
+
 
 
 
