@@ -101,6 +101,11 @@ padding-top: 10px;
     color: black; 
 }
 
+#animals{
+    color: white;
+
+}
+
 #catagory{
     
     border-radius:2px;
@@ -121,8 +126,7 @@ padding-top: 10px;
     margin:px;
     cursor:pointer;
 }
-#mylives{
-    font-size:1.6em;
-    text-align:center;
-    display:block;
+span{
+    color: black;
 }
+
