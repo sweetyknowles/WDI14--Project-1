@@ -27,7 +27,7 @@ window.onload = function () {
         let newWord = word.split('')
         for (let i = 0; i < newWord.length; i++) {
             if (val === newWord[i]) {
-                $('#chance').html("You Lost: Game OVER!");
+                $('#chance').html("You get only 6 chances");
                 console.log('values match this many times')
                 $(`#span${val}`).css('color', 'white')
                 //console.log('try again')
