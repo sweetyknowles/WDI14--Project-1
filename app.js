@@ -1,13 +1,13 @@
 window.onload = function () {
 
     let animals = ['bear', 'horse', 'lion'];
-
+    let actors = ['sean', 'brad', 'sam']
     let chance = 6;
-    console.log(chance)
-    var word = "bear";
+    let word = "bear";
 
-    let alphabet = "abcdefghijklmnopqrstuvwxyz"
-    // function for the chosen word  from the animal that is to be guessed by the user. 
+    //create buttons for all letters in alphabet
+    let alphabet = "abcdefghijklmnopqrstuvwxyz";
+    // make buttons clickable to user
     let alphabetFunction = function (letters) {
         const newArray = []
         for (i = 0; i < letters.length; i++) {
@@ -20,45 +20,63 @@ window.onload = function () {
 
     alphabetFunction(alphabet)
 
-
+    // comparing the values in the array, split the word in letters.
     function compareValues(val) {
         let count = 0;
         let correctMatch = false;
         let newWord = word.split('')
+        // run through the loop and comapare= values.
         for (let i = 0; i < newWord.length; i++) {
             if (val === newWord[i]) {
-                $('#chance').html("You get only 6 chances");
+                $('#chance').html("you are getting there");
                 console.log('values match this many times')
-                $(`#span${val}`).css('color', 'white')
-                //console.log('try again')
+                //letters appear on the screen for right guesses
+                $(`#span${val}`).css('color', 'green')
+
+
                 correctMatch = true;
                 count++
+
+
             }
+            //     if (count = newWord[0].length) {
+            //         $('#chance').html("You WON!!!");
+            //     $('.style').attr('disabled', true)
+
+            // }
         }
+        //checking the counts of the wrong guesses
         if (count === 0) {
             chance--
 
             $('#chance').html("Guess Again");
-            //console.log(`you have ${chance} chances left`)
+            // counts the remaining chances
+            console.log(`you have ${chance} chances left`)
         }
-        if (chance < 0) {
+        // the chances are counted and when used all chances without winning. displays user they lost
+        if (chance <= 0) {
             $('#chance').html("You Lost: Game OVER!");
-            //console.log("GameOver")
             $('.style').attr('disabled', true)
+
         }
-         console.log("The guess was " + correctMatch)
-  }
+
+        console.log("The guess was " + correctMatch)
 
 
+    }
+
+
+
+    // targating the buttons as the user clicks buttons
     $('.style').one('click', ((target) => {
         let value = target.target.id
         compareValues(value)
 
     }))
 
-    
-        
-    }
+
+
+}
 
 
 
