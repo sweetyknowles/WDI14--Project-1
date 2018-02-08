@@ -26,7 +26,7 @@ window.onload = function () {
         console.log(winArray)
         if (winArray.length === word.length) {
             console.log("win")
-            $('#winArray').html("You Got It!");
+            $('#winArray').html("You Got It!").css({ "color": "yellow", "font-size": "50px" });
             $('.style').attr('disabled', true)
         }
     }
@@ -41,7 +41,7 @@ window.onload = function () {
         // run through the loop and comapare= values.
         for (let i = 0; i < newWord.length; i++) {
             if (val === newWord[i]) {
-                $('#chance').html("you are getting there");
+                $('#chance').html("You are getting there").css({ "color": "magenta", "font-size": "20px" });;
 
 
                 // console.log('values match this many times')
@@ -62,13 +62,13 @@ window.onload = function () {
         if (count === 0) {
             chance--
 
-            $('#chance').html("Guess Again");
+            $('#chance').html("Guess Again").css({ "color": "orangered", "font-size": "30px" });;
             // counts the remaining chances
-            $('#val').html("you have " + chance + " chances left")
+            $('#val').html("you have " + chance + " chances left").css({ "color": "deepskyblue", "font-size": "50px" });
         }
         // the chances are counted and when used all chances without winning. displays user they lost
         if (chance < 0) {
-            $('#chance').html("You Lost: Game OVER!");
+            $('#chance').html("You Lost: Game OVER!").css({ "color": "red", "font-size": "50px" });;
             $('.style').attr('disabled', true)
 
         }

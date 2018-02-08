@@ -21,6 +21,7 @@ h2{
 text-align: center;
 text-decoration-line: underline;
 text-justify: auto;
+}
 
 
 }
@@ -30,7 +31,12 @@ text-justify: auto;
    font-size: 180%;
 }
 
+.words{
 
+    text-align: center;
+    color:rgb(226, 219, 126);
+   font-size: 180%;
+}
 div {
     background-color: black;
     width: 100%;
