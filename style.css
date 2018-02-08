@@ -12,7 +12,7 @@
 
 header {
     color: rgb(7, 5, 7);
-    background: rgb(224, 224, 224);
+    background: rgb(226, 219, 126);
     height: 150px;
     width: 150%;
 }
@@ -24,6 +24,13 @@ text-justify: auto;
 
 
 }
+.para{
+    text-align: center;
+    color:rgb(226, 219, 126);
+   font-size: 180%;
+}
+
+
 div {
     background-color: black;
     width: 100%;
