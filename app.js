@@ -1,12 +1,12 @@
 window.onload = function () {
 
-    let animals = ['bear', 'horse', 'lion'];
-    let actors = ['sean', 'brad', 'sam']
+    const animals = ['bear', 'horse', 'lion'];
+    const actors = ['sean', 'brad', 'sam']
     let chance = 6;
     let word = "bear";
 
     //create buttons for all letters in alphabet
-    let alphabet = "abcdefghijklmnopqrstuvwxyz";
+    const alphabet = "abcdefghijklmnopqrstuvwxyz";
     // make buttons clickable to user
     let alphabetFunction = function (letters) {
         const newArray = []
@@ -29,6 +29,7 @@ window.onload = function () {
         for (let i = 0; i < newWord.length; i++) {
             if (val === newWord[i]) {
                 $('#chance').html("you are getting there");
+                
                 console.log('values match this many times')
                 //letters appear on the screen for right guesses
                 $(`#span${val}`).css('color', 'green')
@@ -36,10 +37,11 @@ window.onload = function () {
 
                 correctMatch = true;
                 count++
-
+               
+            
 
             }
-            //     if (count = val) {
+            //     if (count = newWord.length) {
             //         $('#chance').html("You WON!!!");
             //     $('.style').attr('disabled', true)
 
@@ -51,7 +53,8 @@ window.onload = function () {
 
             $('#chance').html("Guess Again");
             // counts the remaining chances
-            console.log(`you have ${chance} chances left`)
+            $('#val').html("you have " + chance + " chances left")
+             console.log(`you have ${chance} chances left`)
         }
         // the chances are counted and when used all chances without winning. displays user they lost
         if (chance <= 0) {
