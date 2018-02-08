@@ -71,6 +71,11 @@ div {
     display: block;
 }
 
+#animal{
+    
+    padding-top: 30px;
+}
+
 
 .style {
     color: black; 
