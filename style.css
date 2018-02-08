@@ -7,9 +7,7 @@
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    
-  
-}
+  }
 
 
 header {
@@ -32,9 +30,7 @@ div {
     display: flex;
     flex-direction: row;
     flex-grow: 1;	
-    
-   
-}
+    }
  
 main {
     background-color: black;
@@ -42,6 +38,7 @@ main {
 
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
     flex: 6;
+    
 }
 .List {
     font-style: italic;
@@ -61,7 +58,7 @@ aside {
     Color: white;
     font-size: relative;
      flex: 10;
-    
+
 }
 
 footer {
@@ -74,28 +71,6 @@ div {
     display: block;
 }
 
-#controlPanel{
-float:left;
-padding-top: 10px;
-}
-.button{
-    background-color: grey;
-    color:white; 
-     border-radius:2px;
-    padding: 1px;
-    text-align: center;
-    margin:px;
-    cursor:pointer;
-} 
-#trafficlight{
-    height:20px;
-    width:150;
-    float: left;
-    background-color: blue;
-    border-radius: 30px;
-    margin: 20px 0;
-    padding: 10px;
-}
 
 .style {
     color: black; 
@@ -106,26 +81,7 @@ padding-top: 10px;
 
 }
 
-#catagory{
-    
-    border-radius:2px;
-    padding: 1px;
-    text-align: center;
-    padding-bottom: 10%;
-    padding-top: 10%;
-    margin:px;
-    cursor:pointer;
-}
 
-#back{
-    border-radius:2px;
-    padding: 1px;
-    text-align: center;
-    padding-bottom: 10%;
-    padding-top: 10%;
-    margin:px;
-    cursor:pointer;
-}
 span{
     color: black;
 } 
