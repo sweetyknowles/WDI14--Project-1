@@ -39,7 +39,7 @@ window.onload = function () {
 
 
             }
-            //     if (count = newWord[0].length) {
+            //     if (count = val) {
             //         $('#chance').html("You WON!!!");
             //     $('.style').attr('disabled', true)
 
