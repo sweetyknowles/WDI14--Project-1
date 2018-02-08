@@ -18,6 +18,6 @@ Th game page has two categories:
 
 
 
-Link to the deployment ~~~~ http://mystifying-wing-e3ed27.bitballoon.com/
+Link to the deployment ~~~~ https://www.bitballoon.com/sites/friendly-brattain-b3c6a1
 Link to  Trello ~~~~~~~~https://trello.com/b/Bopg1x4Z/wdi-project-1
 Link to Wireframe ~~~~~~https://imgur.com/a/ZffOH
